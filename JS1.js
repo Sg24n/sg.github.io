@@ -21,5 +21,5 @@ if (randomNumber <= 0.5) { answer = 'пекар' }
 else { answer = 'плотник' };
 
 alert('Твоя мама случайно не ' + answer + ' ?')
-print('aboba')
+
 
