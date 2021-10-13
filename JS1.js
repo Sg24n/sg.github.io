@@ -23,13 +23,13 @@ console.log(randomNumber());
 var answer
 var answer2
 
-if (randomNumber() <= 0.5) { answer = 'пекарь' }
-else if (randomNumber()<=0.7){answer="отец"}
+if (randomNumber() <= 0.3) { answer = 'пекарь' }
+else if (randomNumber()<=0.6){answer="отец"}
 else { answer = 'плотник' };
 
 
-if (randomNumber() <= 0.5) { answer2 = 'й молоток' }
-else if(randomNumber()<=0.7){answer2 = 'й член'}
+if (randomNumber() <= 0.3) { answer2 = 'й молоток' }
+else if(randomNumber()<=0.6){answer2 = 'й член'}
 else { answer2 = 'е печенье' };
 
 alert('Твоя мама случайно не ' + answer + ' ? Тогда откуда у неё тако'+answer2+' ?')
