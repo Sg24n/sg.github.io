@@ -8,3 +8,4 @@ body{ background-color:black;
 }
 
 h2{color: plum;}
+.avatar {height:250px; border-radius: 50%; box-shadow: 4px 4px 40px pink;}
