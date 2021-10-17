@@ -14,7 +14,7 @@
 }
 .b2{
     background-color: bisque;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Roboto';
 }
 
 
@@ -56,7 +56,5 @@ h2{color: plum;}
     color: gold;
 }
 
-bDiv1{
-    font-family:monospace;
-}
+
 

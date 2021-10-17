@@ -36,6 +36,14 @@ function getValue() {
         var outP2 = part;
         var outP3 = part * 2;
     }
+    else if (tP1 > 0) {
+        clog = "4"
+        var part = inCoins;
+        var outP1 = part;
+        var outP2 = 0;
+        var outP3 = 0;
+
+    }
     else { clog = "!ошибка!" }
 
     //Цена одной мнеты
@@ -81,6 +89,37 @@ function getValue() {
         "\nСумма выхода = " + sumD +
         "\nОбщий % =      " + sumProc);
 
+    var str1 = document.getElementById("1");
+    var str2 = document.getElementById("2");
+    var str3 = document.getElementById("2");
+    var str3 = document.getElementById("3");
+    var str4 = document.getElementById("4");
+    var str5 = document.getElementById("5");
+    var str6 = document.getElementById("6");
+    str1.innerHTML = 'Цена : ' + cost;
+    str2.innerHTML = 'Часть : ' + part
+    str3.innerHTML = 'ТП 1 = ' + outP1 + ' = ' + procent1 + '%';
+    str4.innerHTML = 'ТП 2 = ' + outP2 + ' = ' + procent2 + '%';
+    str5.innerHTML = 'ТП 3 = ' + outP3 + ' = ' + procent3 + '%';
+    str6.innerHTML = 'Сумма выхода: ' + sumD + ' = '+sumProc+'%';
+
+  
+
+
+
+
+
+    // p.innerHTML=('Алгоритм части: ' + clog+
+    // "\nСтоимость монеты = " + cost +
+    // "\nЧасть от монет   = " + part+
+    // "\nКол-во монет на продажу " +
+    // "\nТочка 1 = " + outP1 +
+    // "\nТочка 2 = " + outP2 +
+    // "\nТочка 3 = " + outP3+
+    // "\n\tПрофит " +
+    // "\nТочка $ 1 = " + outPD1 +
+    // "\nТочка $ 2 = " + outPD2 +
+    // "\nТочка $ 3 = " + outPD3)
 
 
 
