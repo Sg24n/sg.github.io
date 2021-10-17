@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
 <link rel="stylesheet" href="styles.css">
-<!-- <script src="JS1.js"></script> -->
+<script src="JS1.js"></script>
 
 <head>
   <meta charset="UTF-8" />
   <title>Просто сайтик мой</title>
 </head>
 
-<body>
+<body class="b1">
   <h2>Страничка котика</h2>
   <hr size="1">
-  <table cellspacing='12'>
-    <tr>
-      <td>
+  <!-- div это блок, размета производится с помощью блоков -->
+      <div class="block1">
+        <!-- Аватарка -->
         <img src="img/avatar1.png" class="avatar"></img>
-      </td>
-      <td>
-        <p style="color:gold">ПсевдоКирилл 112 лет</p>
+
+        <h4>ПсевдоКирилл 112 лет</h4>
 
 
         <p>Увлечения:</p>
-
+        <!-- Параметр а создаёт ссылку, 
+        target _blank при нажатии на ссылку открывает её в новой вкладке
+        между параметром указывается текст при нажатии на который будет открываться ссылка -->
         <p><a href="https://blog.brawlstars.com/" target="_blank"> Бравый сас</a></li>
         </p>
 
-        <p><a href="https://sg24n.github.io/sg.github.io/b.html" target="_blank">Участие в шоу бизнесе</a></li>
+        <p><a href="https://sg24n.github.io/sg.github.io/b.html" target="_blank">Расчёт профита</a></li>
         </p>
+      </div>
 
-      </td>
-    </tr>
-  </table>
 
 
 
   <h2>О себе: Ничего не скажу</h2>
+  <!-- переход на новую строку -->
   <br>
+  <!-- горизонтальная четра разделяющая страницу на части -->
   <hr size="1";>
   <h4>На лечение</h4>
-  <form action="JS1.js">
-
+  <!-- попытка взаимодействия с жаваскрипт -->
+  <!-- <form action="JS1.js"> -->
+    <form action="">
+      <!-- при нажатии на лейбл for"number" пересылает нажатие на строку ввода   -->
     <label for="number">
       card number
     </label>
 
     <br>
+    <!-- Параметр ввода принимающий текст, имеющий id number по которому с ним можно 
+    взаимодействовать. placeholder создаёт текст внутри строки ввода в качестве подсказки -->
     <input type="text" id='number' placeholder="4323124387450867">
     <br>
     <label for="cvcCode">
@@ -53,10 +58,12 @@
     <br>
     <input type="text" id='cvcCode' placeholder="123">
     <br>
+    <!-- Параметр ввода, sumbit создаёткнопку, value меняет в ней текст -->
     <input type="submit" value="Подтвердить">
 
   </form>
 
+  <!-- Таблицы в html   -->
   <!-- <table border="1">
     <tr>
       <th>Параметр1</th>
