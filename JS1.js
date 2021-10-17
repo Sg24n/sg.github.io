@@ -98,9 +98,9 @@ function getValue() {
     var str6 = document.getElementById("6");
     str1.innerHTML = 'Цена : ' + cost;
     str2.innerHTML = 'Часть : ' + part
-    str3.innerHTML = 'ТП 1 = ' + outP1 + ' = ' + procent1 + '%';
-    str4.innerHTML = 'ТП 2 = ' + outP2 + ' = ' + procent2 + '%';
-    str5.innerHTML = 'ТП 3 = ' + outP3 + ' = ' + procent3 + '%';
+    str3.innerHTML = 'ТП 1 = ' + outP1 +  ' = ' + outPD1+ '$ = ' + procent1 + '%';
+    str4.innerHTML = 'ТП 2 = ' + outP2 +  ' = ' + outPD2+ '$ = ' + procent2 + '%';
+    str5.innerHTML = 'ТП 3 = ' + outP3 +  ' = ' + outPD3+ '$ = ' + procent3 + '%';
     str6.innerHTML = 'Сумма выхода: ' + sumD + ' = '+sumProc+'%';
 
   
