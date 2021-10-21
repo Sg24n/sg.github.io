@@ -11,7 +11,7 @@ function getValue() {
     var tP3 = document.getElementById("tp3").value;
 
 
-
+    //Рассчёт части от монет
     if (tP1 && tP2 && tP3 > 0) {
         clog = "1"
         //1/6 часть от суммы монет
@@ -64,31 +64,26 @@ function getValue() {
     var sumProc = procent1 + procent2 + procent3;
 
     //Вывод в консоль
-    console.log("Алгоритм части: " + clog)
-    console.log(
+    console.log("Алгоритм части: " + clog+
         "Стоимость монеты = " + cost +
-        "\nЧасть от монет   = " + part);
-    console.log(
+        "\nЧасть от монет   = " + part+
+   
         "\nКол-во монет на продажу " +
         "\nТочка 1 = " + outP1 +
         "\nТочка 2 = " + outP2 +
-        "\nТочка 3 = " + outP3);
-    console.log(
+        "\nТочка 3 = " + outP3+
+   
         "\n\tПрофит " +
         "\nТочка $ 1 = " + outPD1 +
         "\nТочка $ 2 = " + outPD2 +
-        "\nТочка $ 3 = " + outPD3
-    );
-
-    console.log(
-        "Процент 1 = " + procent1 + "% " +
+        "\nТочка $ 3 = " + outPD3+
+    
+        "\nПроцент 1 = " + procent1 + "% " +
         "\nПроцент 2 = " + procent2 + "% " +
-        "\nПроцент 3 = " + procent3 + "% ");
-
-    console.log(
+        "\nПроцент 3 = " + procent3 + "% "+
         "\nСумма выхода = " + sumD +
         "\nОбщий % =      " + sumProc);
-
+        //получение и присваивание параграфов к переменной
     var str1 = document.getElementById("1");
     var str2 = document.getElementById("2");
     var str3 = document.getElementById("2");
@@ -96,6 +91,7 @@ function getValue() {
     var str4 = document.getElementById("4");
     var str5 = document.getElementById("5");
     var str6 = document.getElementById("6");
+    //Присваивание полям p1-6 содержимого с помощью интерфейса innerHTML
     str1.innerHTML = 'Цена : ' + cost;
     str2.innerHTML = 'Часть : ' + part
     str3.innerHTML = 'ТП 1 = ' + outP1 +  ' = ' + outPD1+ '$ = ' + procent1 + '%';
@@ -103,23 +99,6 @@ function getValue() {
     str5.innerHTML = 'ТП 3 = ' + outP3 +  ' = ' + outPD3+ '$ = ' + procent3 + '%';
     str6.innerHTML = 'Сумма выхода: ' + sumD + ' = '+sumProc+'%';
 
-  
-
-
-
-
-
-    // p.innerHTML=('Алгоритм части: ' + clog+
-    // "\nСтоимость монеты = " + cost +
-    // "\nЧасть от монет   = " + part+
-    // "\nКол-во монет на продажу " +
-    // "\nТочка 1 = " + outP1 +
-    // "\nТочка 2 = " + outP2 +
-    // "\nТочка 3 = " + outP3+
-    // "\n\tПрофит " +
-    // "\nТочка $ 1 = " + outPD1 +
-    // "\nТочка $ 2 = " + outPD2 +
-    // "\nТочка $ 3 = " + outPD3)
 
 
 
